@@ -1,0 +1,68 @@
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/f_pais"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/filter"
+        android:title="Pais"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/continent_europe"
+                android:title="Europa" />
+            <item
+                android:id="@+id/continent_africa"
+                android:title="África" />
+            <item
+                android:id="@+id/continent_north_america"
+                android:title="América del Norte" />
+            <item
+                android:id="@+id/continent_south_america"
+                android:title="América del Sur" />
+            <item
+                android:id="@+id/continent_asia"
+                android:title="Asia" />
+            <item
+                android:id="@+id/continent_oceania"
+                android:title="Oceanía" />
+            <item
+                android:id="@+id/todos"
+                android:title="Todos" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/game"
+        android:icon="@drawable/play"
+        android:title="game"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/order_by"
+        android:title="Ordenar por"
+        app:showAsAction="never">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/order_by_name_asc"
+                    android:title="Pais (Ascendente)" />
+                <item
+                    android:id="@+id/order_by_name_desc"
+                    android:title="Pais (Descendente)" />
+                <item
+                    android:id="@+id/order_by_capital_asc"
+                    android:title="Capital (Ascendente)" />
+                <item
+                    android:id="@+id/order_by_capital_desc"
+                    android:title="Capital (Descendente)" />
+            </group>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/favorito"
+        android:title="estrella"
+        android:icon="@android:drawable/star_on"
+        app:showAsAction="always" />
+</menu>
